@@ -3,7 +3,7 @@
   "homepage": "https://create-react-app-redux.now.sh",
   "scripts": {
     "deploy": "now && now alias",
-    "start": "react-scripts start",
+    "start": "env-cmd .env react-scripts start",
     "now-start": "serve -s ./build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-plugin-import-rename": "1.0.1",
-    "babel-plugin-module-resolver": "3.1.1",
+    "babel-plugin-module-resolver": "^3.1.2",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-preset-es2015": "6.24.1",
@@ -32,6 +32,7 @@
     "chartist": "^0.11.0",
     "classnames": "2.2.6",
     "connected-react-router": "4.5.0",
+    "env-cmd": "^8.0.2",
     "jwt-decode": "^2.2.0",
     "react": "16.7.0",
     "react-chartist": "^0.13.1",
